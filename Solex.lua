@@ -1,35 +1,22 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "Solex",
-   Icon = 0, 
-   LoadingTitle = "Solex (aim cheat)",
-   LoadingSubtitle = "by soldix",
-   ShowText = "Solex", 
-   Theme = "Default", 
-
-   ToggleUIKeybind = "K", 
-
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, 
-
-    Discord = {
-      Enabled = true, 
-      Invite = "https://discord.gg/QKBu2B4h",
-      RememberJoins = true 
-   },
  
+   Name = "Solex",
+   Theme = "Default",
    KeySystem = true,
    KeySettings = {
-      Title = "Solex Keysystem",
-      Subtitle = "meh",
-      Note = "join -->  https://discord.gg/QKBu2B4h",
-      FileName = "SolexKeyFile",
+      Title = "Solex key system",
+      Subtitle = "by soldix",
+      Note = "join for key --> https://discord.gg/QKBu2B4h",
+      FileName = "KeyTest",
       SaveKey = false,
       GrabKeyFromSite = false,
       Key = {"SolexKey"}
    }
 })
+
+
 
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
