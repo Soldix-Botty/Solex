@@ -1,5 +1,27 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+local Window = Rayfield:CreateWindow({
+   Name = "Solex",
+   Theme = "",
+
+    Discord = {
+      Enabled = true, 
+      Invite = "https://discord.gg/QKBu2B4h",
+      RememberJoins = true 
+   },
+ 
+   KeySystem = true,
+   KeySettings = {
+      Title = "Solex Keysystem",
+      Subtitle = "meh",
+      Note = "join -->  https://discord.gg/QKBu2B4h",
+      FileName = "SolexKeyFile",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"SolexKey"}
+   }
+})
+
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
 local TeleportService = game:GetService("TeleportService")
@@ -60,17 +82,6 @@ local targetedCircleColor = Color3.fromRGB(0, 255, 0)
 
 local aimViewerEnabled = false
 local ignoreSelf = true
-
-local Window = Rayfield:CreateWindow({
-    Name = "Solex",
-    LoadingTitle = "loading",
-    LoadingSubtitle = "by soldix",
-    ConfigurationSaving = {
-        Enabled = true,
-        FolderName = "UniversalHub",
-        FileName = "byAgreed"
-    },
-})
 
 local Aimbot = Window:CreateTab("Aimbot")
 local AntiAim = Window:CreateTab("Anti-Aim ")
