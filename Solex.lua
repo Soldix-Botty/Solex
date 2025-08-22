@@ -1,8 +1,17 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Solex",
-   Theme = "",
+    Name = "Solex",
+   Icon = 0, 
+   LoadingTitle = "Solex (aim cheat)",
+   LoadingSubtitle = "by soldix",
+   ShowText = "Solex", 
+   Theme = "Default", 
+
+   ToggleUIKeybind = "K", 
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, 
 
     Discord = {
       Enabled = true, 
@@ -16,7 +25,7 @@ local Window = Rayfield:CreateWindow({
       Subtitle = "meh",
       Note = "join -->  https://discord.gg/QKBu2B4h",
       FileName = "SolexKeyFile",
-      SaveKey = true,
+      SaveKey = false,
       GrabKeyFromSite = false,
       Key = {"SolexKey"}
    }
