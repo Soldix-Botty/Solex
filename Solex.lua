@@ -63,16 +63,16 @@ local ignoreSelf = true
 
 local Window = Rayfield:CreateWindow({
     Name = "Solex",
-    LoadingTitle = "Loading...",
+    LoadingTitle = "loading",
     LoadingSubtitle = "by soldix",
     ConfigurationSaving = {
         Enabled = true,
-        FolderName = "Solex",
-        FileName = "bysoldix"
+        FolderName = "UniversalHub",
+        FileName = "byAgreed"
     },
 })
 
-local Aimbot = Window:CreateTab("Aimbot ")
+local Aimbot = Window:CreateTab("Aimbot")
 local AntiAim = Window:CreateTab("Anti-Aim ")
 local Misc = Window:CreateTab("Misc ")
 
@@ -470,7 +470,6 @@ local randomvelorange = AntiAim:CreateSlider({
     end,
 })
 
--- [< Misc >]
 
 local spinbottoggle = Misc:CreateToggle({
     Name = "Spin-Bot",
@@ -545,10 +544,10 @@ local ServerHop = Misc:CreateButton({
             if #servers > 0 then
                 TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], plr)
             else
-                Rayfield:Notify({Title = "Server Hop", Content = "no server found :skull:", Duration = 1, Image = 4483362458,})
+                Rayfield:Notify({Title = "Server Hop", Content = "no server found", Duration = 1, Image = 4483362458,})
             end
         else
-            Rayfield:Notify({Title = "Server Hop", Content = "not supported exc lmao", Duration = 1, Image = 4483362458})
+            Rayfield:Notify({Title = "Server Hop", Content = "bad exc :skull:", Duration = 1, Image = 4483362458,})
         end
 	end,
-}) 
+})
