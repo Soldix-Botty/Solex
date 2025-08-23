@@ -360,7 +360,6 @@ PlayerTab:CreateToggle({
     end,
 })
 
--- Vote Tab Elements
 VoteTab:CreateDropdown({
     Name = "Select Map",
     Options = {"Map 1", "Map 2", "Map 3", "Map 4"},
